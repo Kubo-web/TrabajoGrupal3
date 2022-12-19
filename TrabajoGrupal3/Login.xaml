@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrabajoGrupal3.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logoItq"></Image>
+            <Label Text="Welcome to Xamarin.Forms!"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="entUsuario"
+                   Placeholder="usuario"
+                   HorizontalOptions="Center"
+                   Keyboard="Text"></Entry>
+            <Entry x:Name="entContraseña"
+                   Placeholder="contraseña"
+                   HorizontalOptions="Center"
+                   Keyboard="Text"></Entry>
+            <Button Text="Iniciar Sesion"
+                    x:Name="btnIniciar"
+                    Clicked="btnIniciar_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
