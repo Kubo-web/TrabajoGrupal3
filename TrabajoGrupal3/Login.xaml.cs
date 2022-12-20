@@ -19,9 +19,24 @@ namespace TrabajoGrupal3
 
         private async void btnIniciar_Clicked(object sender, EventArgs e)
         {
-            string usuario = entUsuario.Text;
-            string contraseña = entContraseña.Text;
-            await Navigation.PushAsync(new Registro(usuario, contraseña));
+            
+            String usuario = txtUsuario.Text;
+            String contraseña = txtContraseña.Text;
+
+            if (usuario == "nombreEstudiante2022" && contraseña == "itq2022")
+            {
+                await Navigation.PushAsync(new Registro(usuario, contraseña));
+            }
+            else {
+                DisplayAlert("Usuario o Contraseña incorrecta", "Intente de nuevo", "Salir");
+            }
+                
+            
+            
+                
+            
+            
+            
 
         }
     }

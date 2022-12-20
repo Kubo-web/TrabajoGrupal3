@@ -4,10 +4,47 @@
              x:Class="TrabajoGrupal3.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="lblUsuario" Text="" HorizontalOptions="Center" ></Label>
+            <Label x:Name="lblUsuario"
+                   Text=""
+                   HorizontalOptions="Center"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,0"></Label>
+            <Frame Margin="20"
+                   CornerRadius="20">
+                <StackLayout>
+                    <Label x:Name="lblNombre"
+                           Text="Ingrese nombre completo"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="25"></Label>
+                    <Entry x:Name="txtNombre"
+                           HorizontalOptions="CenterAndExpand"
+                           Keyboard="Text"
+                           FontSize="Large"
+                           Placeholder="Ingrese su nombre"></Entry>
+                    <Label x:Name="lblMonto"
+                           Text="Ingrese el monto"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="25"></Label>
+                    <Entry x:Name="txtMonto"
+                           HorizontalOptions="Center"
+                           Keyboard="Numeric"
+                           FontSize="Large"
+                           Placeholder="Ingrese su monto"></Entry>
+                    <Label x:Name="lblPagos"
+                           Text=""
+                           HorizontalOptions="Center"></Label>
+                    <Button Text="CALCULAR"
+                            x:Name="btnCalcular"
+                            Clicked="btnCalcular_Clicked"></Button>
+                    <Button Text="GUARDAR"
+                            x:Name="btnGuardar"
+                            Clicked="btnGuardar_Clicked"
+                            ></Button>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
